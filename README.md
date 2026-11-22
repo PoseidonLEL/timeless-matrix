@@ -1,4 +1,4 @@
-# Timless Matrix
+# Timeless Matrix
 
 A NumPy-based **versioned two-dimensional matrix** supporting row/column insertion and deletion plus **selective cell-level rewind**. Restore particular coordinates from an earlier matrix version while leaving the other current cells untouched.
 
