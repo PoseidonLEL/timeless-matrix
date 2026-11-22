@@ -97,16 +97,6 @@ This implementation prioritizes simple NumPy operations and exact `float32` hist
 
 For a **5,000 × 5,000 `float32` matrix**, each full snapshot occupies approximately **95.37 MiB**. Eight equally sized snapshots would occupy approximately **763 MiB**, excluding overhead. Adding/removing rows or columns changes the size of individual snapshots.
 
-### Benchmarking
-
-If you have the accompanying benchmark script, run:
-
-```bash
-python benchmark_timless_matrix.py
-```
-
-Performance depends on matrix dimensions, memory bandwidth, system load, and the operation mix. Report timings with the machine and test conditions rather than assuming they generalize.
-
 ## Design considerations
 
 - **Exact history:** Stored snapshots preserve historical `float32` values.
