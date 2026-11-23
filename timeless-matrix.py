@@ -98,7 +98,7 @@ class timless_matrix:
         pastArray = self.array_history[-1-how_far_back]
         if(np.any((rows>=pastArray.shape[0]) | (rows < -pastArray.shape[0]) |
                   (cols>=pastArray.shape[1]) | (cols < -pastArray.shape[1]))):
-            return "Index does not exist in this past instance!"
+            raise IndexError("Index does not exist in this past instance!")
         if(np.any((rows>=self.array.shape[0]) | (rows < -self.array.shape[0]) |
                   (cols>=self.array.shape[1]) | (cols < -self.array.shape[1]))):
             raise IndexError("Index is outside the current matrix!")
