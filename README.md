@@ -4,7 +4,7 @@ A NumPy-based **two-dimensional matrix** supporting row/column insertion and del
 
 > The source filename and class name intentionally use the spelling `timless_matrix`.
 
-[https://github.com/PoseidonLEL/timeless-array](One-Dimensional Version of Timless Matrix here)
+[One-Dimensional Version of Timless Matrix here](https://github.com/PoseidonLEL/timeless-array)
 
 ## Features
 
