@@ -106,7 +106,3 @@ For a **5,000 × 5,000 `float32` matrix**, each full snapshot occupies approxima
 - **Position-based history:** Inserted/deleted rows and columns can shift coordinate meanings.
 - **Mutation safety:** Avoid editing `matrix.array` or `matrix.array_history` in place; doing so can bypass or corrupt version tracking.
 - **Scope:** This is a numerical matrix utility, not a layer-aware image editor or a compressed-history engine.
-
-## License
-
-No license is included by default. Add a `LICENSE` file before distributing under specific reuse terms.
