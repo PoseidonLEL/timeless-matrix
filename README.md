@@ -1,6 +1,6 @@
 # Timeless Matrix
 
-A NumPy-based **versioned two-dimensional matrix** supporting row/column insertion and deletion plus **selective cell-level rewind**. Restore particular coordinates from an earlier matrix version while leaving the other current cells untouched.
+A NumPy-based **two-dimensional matrix** supporting row/column insertion and deletion plus **selective cell-level rewind**. Restore particular coordinates from an earlier matrix version while leaving the other current cells untouched.
 
 > The source filename and class name intentionally use the spelling `timless_matrix`.
 
