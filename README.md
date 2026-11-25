@@ -92,6 +92,7 @@ print(matrix.array)
 - Coordinates outside the current matrix raise `IndexError`.
 - A successful nonempty rewind creates a new full snapshot.
 - Coordinates are **positional**, not persistent row/column identities. Structural changes can make the same coordinates refer to different logical cells in different versions.
+- `revert_entire_array` also exists if you wish to revert an entire matrix instead of individual elements.
 
 ## Performance and memory
 
