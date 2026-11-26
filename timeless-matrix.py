@@ -3,7 +3,7 @@ from operator import index as integer_index
 import numpy as np
 
 
-class timless_matrix:
+class timeless_matrix:
 
     def __init__(self, array):
         self.array = np.array(array, dtype=np.float32, copy=True)
