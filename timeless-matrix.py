@@ -1,5 +1,4 @@
 from operator import index as integer_index
-
 import numpy as np
 
 
