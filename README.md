@@ -2,7 +2,7 @@
 
 A NumPy-based **two-dimensional matrix** supporting row/column insertion and deletion plus **selective cell-level rewind, or whole matrix reversion**. Restore particular coordinates from an earlier matrix version while leaving the other current cells untouched.
 
-[One-Dimensional Version of Timless Matrix here](https://github.com/PoseidonLEL/timeless-array)
+[One-Dimensional Version of Timeless Matrix here](https://github.com/PoseidonLEL/timeless-array)
 
 ## Features
 
@@ -23,12 +23,12 @@ pip install numpy
 
 ## Quick start
 
-Place `timless_matrix.py` in your project directory:
+Place `timeless_matrix.py` in your project directory:
 
 ```python
-from timless_matrix import timless_matrix
+from timeless_matrix import timeless_matrix
 
-matrix = timless_matrix([
+matrix = timeless_matrix([
     [1, 2],
     [3, 4]
 ])
@@ -53,7 +53,7 @@ print(matrix.array)
 
 | Method | Description |
 | --- | --- |
-| `timless_matrix(array)` | Initialize from a 2D array-like input, converted to `float32`. |
+| `timeless_matrix(array)` | Initialize from a 2D array-like input, converted to `float32`. |
 | `add_to_array(value, index=None, to_end=False, axis=0)` | Insert a full row (`axis=0`) or column (`axis=1`). |
 | `remove_from_array(index, axis=0)` | Delete a row or column at `index`. |
 | `rewind(index, how_far_back, revert_entire_array)` | Restore one `(row, column)` pair or multiple coordinate pairs from a past snapshot, or an entire matrix. |
@@ -62,7 +62,7 @@ print(matrix.array)
 ### Insert and remove
 
 ```python
-matrix = timless_matrix([[1, 2], [3, 4]])
+matrix = timeless_matrix([[1, 2], [3, 4]])
 
 matrix.add_to_array([5, 6], index=1, axis=0)  # Insert row
 matrix.add_to_array([7, 8, 9], to_end=True, axis=1)  # Append column
@@ -74,7 +74,7 @@ The inserted row or column must be a **1D sequence whose length matches the othe
 ### Selective rewind
 
 ```python
-matrix = timless_matrix([[10, 20], [30, 40]])
+matrix = timeless_matrix([[10, 20], [30, 40]])
 matrix.add_to_array([50, 60], to_end=True, axis=0)
 
 matrix.rewind([(0, 1), (1, 0)], how_far_back=1)
