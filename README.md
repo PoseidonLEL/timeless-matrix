@@ -58,7 +58,7 @@ print(matrix.array)
 | `timless_matrix(array)` | Initialize from a 2D array-like input, converted to `float32`. |
 | `add_to_array(value, index=None, to_end=False, axis=0)` | Insert a full row (`axis=0`) or column (`axis=1`). |
 | `remove_from_array(index, axis=0)` | Delete a row or column at `index`. |
-| `rewind(index, how_far_back, revert_entire_array)` | Restore one `(row, column)` pair or multiple coordinate pairs from a past snapshot. |
+| `rewind(index, how_far_back, revert_entire_array)` | Restore one `(row, column)` pair or multiple coordinate pairs from a past snapshot, or an entire matrix. |
 | `update_history(new_array)` | Append a matrix reference to history; intended for internal use. |
 
 ### Insert and remove
